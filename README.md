@@ -1,6 +1,6 @@
 # Pull Request Best Practicies
 
-![Pull Request](https://railsware.com/blog/wp-content/uploads/2018/09/pull-Icon-180x180.png)
+![Pull Request](images/pull-request.jpg)
 
 ## Description
 

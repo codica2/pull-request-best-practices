@@ -12,7 +12,7 @@ Our [Codica](https://github.com/codica2) team has developed a set of rules and t
 
 ### General
 
-* Always create and use [Pull Request Templates](https://docs.gitlab.com/ee/user/project/description_templates.html#creating-merge-request-templates) for the repository with which you work.
+* Always create and use [Pull Request Templates](https://docs.gitlab.com/ee/user/project/description_templates.html#creating-merge-request-templates) for the repository you're working with.
 * In the PR title use tags `[Fix]`, `[Feature]`, `[Refactor]`, `[Release]`, `[Hotfix]`
   
   Example:
@@ -22,12 +22,12 @@ Our [Codica](https://github.com/codica2) team has developed a set of rules and t
   ```
 
 * PR description must necessarily include:
-  * Trello/Jira ticket
+  * Trello/Jira ticket URL
   * PR explanation and what it does
   * At least 2 code reviewers
 * Always set a checkbox `Remove source branch when merge request is accepted.`
 
-### Automate PR Validation
+### Automate Pull Request Validation
 
 * Be sure to configure [DangerBot](https://danger.systems/ruby/) to check the validity of your PRs
 
@@ -36,25 +36,25 @@ Our [Codica](https://github.com/codica2) team has developed a set of rules and t
   * Description
   * Reviewers
 
-We'll explain how to set up [DangerBot](https://danger.systems/ruby/) and provide a settings example below in this page.
+We'll explain how to set up [DangerBot](https://danger.systems/ruby/) and provide a settings example below on this page.
 
 ### One ticket = One Pull Request
 
-* One PR must contain changes relating to only one ticket
-* In case several tickets depend on each other, then it makes sense to combine them into one
+* One PR must contain changes corresponding to only one ticket
+* In case when several tickets depend on each other, it makes sense to combine them into one
 
-### Code requirements
+### Code Requirements
 
 * Be sure to cover your code with tests
 * If your code affects the launch, testing or deployment of the application, be sure to update the `Readme.md`
 
-## Pull Request templates setup
+## Pull Request Templates Setup
 
 Create a new Markdown (.md) file inside the `.gitlab/merge_request_templates/ ` directory in your repository. Commit and push to your default branch.
 
 It's pretty easy. You can get acquainted with our [Template example](.gitlab/merge_request_templates/Task.md) here and use in your repository. The template is fully consistent with our Pull Request requirements and we will continue to customize DangerBot according to these requirements.
 
-## Denger Bot setup
+## Danger Bot Setup
 
 Danger runs during your CI process, and gives teams the chance to automate common code review chores.
 
@@ -64,7 +64,7 @@ You can use Danger to codify your teams norms. Leaving humans to think about har
 
 ### Installation
 
-Danger is ruby gem that runs a `Dangerfile`. You set up a `Dangerfile` per-project. The `Dangerfile` contains a collection of home-grown rules specific to your project.
+Danger is Ruby gem that runs a `Dangerfile`. You set up a `Dangerfile` per-project. The `Dangerfile` contains a collection of home-grown rules specific to your project.
 
 Danger should be installed via a Gemfile. Add gem `danger` to your Gemfile, then run bundle.
 

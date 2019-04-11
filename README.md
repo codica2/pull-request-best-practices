@@ -12,8 +12,9 @@ Our [Codica](https://github.com/codica2) team has developed a set of rules and t
 
 ### General
 
-* Always create and use [Pull Request Templates](https://docs.gitlab.com/ee/user/project/description_templates.html#creating-merge-request-templates) for the repository you're working with.
+* Always create and use [Pull Request templates for Gitlab](https://docs.gitlab.com/ee/user/project/description_templates.html#creating-merge-request-templates) or [templates for Github](https://help.github.com/en/articles/creating-a-pull-request-template-for-your-repository) for the repository you're working with.
 * In the PR title use tags `[Fix]`, `[Feature]`, `[Refactor]`, `[Release]`, `[Hotfix]`
+  
   Example:
 
   ```text
@@ -49,6 +50,8 @@ We'll explain how to set up [DangerBot](https://danger.systems/ruby/) and provid
 * If your code affects the launch, testing or deployment of the application, be sure to update the `Readme.md`.
 
 ## Pull Request Templates Setup
+
+We're working with [Gitlab](https://about.gitlab.com/) so we'll shortly explain how to configure templates in it.
 
 Create a new Markdown (.md) file inside the `.gitlab/merge_request_templates/ ` directory in your repository. Commit and push to your default branch.
 

@@ -1,4 +1,4 @@
-# Pull Request Best Practicies
+# Pull Request Best Practices
 
 ![Pull Request](images/pull-request.jpg)
 

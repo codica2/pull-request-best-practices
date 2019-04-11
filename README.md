@@ -40,8 +40,13 @@ We'll explain how to set up [DangerBot](https://danger.systems/ruby/) and provid
 
 ### One ticket = One Pull Request
 
+<<<<<<< HEAD
 * One PR must contain changes corresponding to a single  ticket;
 * In case when several tickets depend on each other, it makes sense to combine them into one.
+=======
+* One PR must contain changes corresponding to only one ticket
+* In case when several tickets depend on each other, it makes sense to combine them into one
+>>>>>>> 4bf7b4f9d164f8663690227a06b4319e23d8f2bf
 
 ### Code Requirements
 
@@ -54,7 +59,11 @@ Create a new Markdown (.md) file inside the `.gitlab/merge_request_templates/ ` 
 
 It's pretty easy. You can get acquainted with our [Template example](.gitlab/merge_request_templates/Task.md) here and use it in your repository. The template is fully consistent with our Pull Request requirements, and we will continue to customize DangerBot according to them. 
 
+<<<<<<< HEAD
 ## DangerBot Setup
+=======
+## Danger Bot Setup
+>>>>>>> 4bf7b4f9d164f8663690227a06b4319e23d8f2bf
 
 Danger runs during your CI process and gives teams the chance to automate common code review routine.
 
@@ -64,7 +73,11 @@ You can use Danger to codify your team’s norms. Leaving humans to think about 
 
 ### Installation
 
+<<<<<<< HEAD
 Danger is Ruby gem that runs a `Dangerfile`. You set up a `Dangerfile` per project. The `Dangerfile` contains a collection of home-grown rules specific to your project.
+=======
+Danger is Ruby gem that runs a `Dangerfile`. You set up a `Dangerfile` per-project. The `Dangerfile` contains a collection of home-grown rules specific to your project.
+>>>>>>> 4bf7b4f9d164f8663690227a06b4319e23d8f2bf
 
 Danger should be installed via a Gemfile. Add gem `danger` to your Gemfile, then run bundle.
 

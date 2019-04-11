@@ -51,7 +51,7 @@ We'll explain how to set up [DangerBot](https://danger.systems/ruby/) and provid
 
 ## Pull Request Templates Setup
 
-We're working with [Gitlab](https://about.gitlab.com/) so we'll shortly explain how to configure templates in it.
+We're working with [Gitlab](https://about.gitlab.com/) so we'll shortly explain how to configure templates on it.
 
 Create a new Markdown (.md) file inside the `.gitlab/merge_request_templates/ ` directory in your repository. Commit and push to your default branch.
 
@@ -94,7 +94,5 @@ Copyright © 2015-2019 Codica. It is released under the [MIT License](https://op
 ## About Codica
 
 [![Codica logo](https://www.codica.com/assets/images/logo/logo.svg)](https://www.codica.com)
-
-The names and logos for Codica are trademarks of Codica.
 
 We love open source software! See [our other projects](https://github.com/codica2) or [hire us](https://www.codica.com/) to design, develop, and grow your product.
